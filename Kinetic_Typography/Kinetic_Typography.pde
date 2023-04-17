@@ -9,15 +9,32 @@ void setup() {
 
 void draw() {
   
-  background (0);
+  background(0);
   
-  pg.beginDraw();
-  pg.background(0);
+  makeText(.6,width/2.5,height/1.5);
+  makeText(.6,width/.8,height/1.5);
+   
+    makeText(.6,width/2.5,height/2);
+  makeText(.6,width/.8,height/2);
+   
+   makeText(.6,width/2.5,height/3);
+  makeText(.6,width/.8,height/3);
+  
+   makeText(.6,width/2.5,height/6);
+  makeText(.6,width/.8,height/6);
+     
+}
+
+void makeText(float sc, float cx, float cy)
+{
+pg.beginDraw();
+  //pg.background(0);
   pg.fill(255);
   pg.textFont(font);
   pg.textSize(250);
   pg.pushMatrix();
-  pg.translate(width/2, height/1.4-215);
+  pg.scale(sc);
+  pg.translate(cx, cy);
   pg.textAlign(CENTER, CENTER);
   pg.text("shake", 0, 0);
   pg.popMatrix();
