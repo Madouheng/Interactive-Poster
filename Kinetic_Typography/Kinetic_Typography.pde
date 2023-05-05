@@ -3,8 +3,8 @@ PFont font;
 
 void setup() {
   font = createFont("Roboto-Regular.ttf", 600);
-  size(800, 800, P2D);
-  pg = createGraphics(800, 800, P2D);
+  size(1000, 800, P2D);
+  pg = createGraphics(1000, 900, P2D);
 }
 
 void draw() {
@@ -22,6 +22,23 @@ void draw() {
   
    makeText(.6,width/2.5,height/6);
   makeText(.6,width/.8,height/6);
+  
+    makeText(.6,width/2.5,height/1.2);
+  makeText(.6,width/.8,height/1.2);
+  
+     makeText(.6,width/2.5,height/1);
+  makeText(.6,width/.8,height/1);
+  
+      makeText(.6,width/2.5,height/.85);
+  makeText(.6,width/.8,height/.85);
+  
+        makeText(.6,width/2.5,height/.74);
+  makeText(.6,width/.8,height/.74);
+   
+   
+  
+   
+ 
      
 }
 
